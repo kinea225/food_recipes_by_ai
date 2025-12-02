@@ -1,0 +1,49 @@
+.AiRecipe{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    border: dotted 1px black;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: rgba(100, 100, 100, 0.2) 0px 7px 29px 8px;
+}
+.AiRecipe .prompt_content{
+    
+    border-radius: 5px;
+    border: solid 1px gray;
+    margin: 5px;
+    height: 100%;   
+}
+.search_wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+.ai_title h4{
+    margin: 0;
+    margin-left: 10px;
+    line-height: 60px;
+
+}
+
+.ai_title input{
+    flex:1;
+    box-sizing: border-box;
+    border: 1px solid rgb(220,220,200);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 70%;
+}
+.ai_title button{
+    cursor:pointer;
+    width: 30%;
+    height: 45px;
+    border: none;
+    background-color: #1f93ff;
+    color:white;
+    border-radius: 10px;
+    margin: 10px;
+}

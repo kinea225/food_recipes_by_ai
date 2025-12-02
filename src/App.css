@@ -1,0 +1,22 @@
+.App{
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.App h1{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.App h2{
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  
+}
+.item_title{
+    margin-top: 5px;
+    margin-left: 5px;
+}

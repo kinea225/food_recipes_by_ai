@@ -1,0 +1,55 @@
+.Editor{
+    margin: 0;
+    padding: 0;
+    width: 49%;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 100, 0.2) -10px 5px 10px 2px;
+    transition: transform 0.2s ease;
+}
+.Editor:hover {
+    transform: scale(1.03);
+}
+.Editor .editor_wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Editor h4{
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.editor_wrapper> input{
+    flex:1;
+    box-sizing: border-box;
+    border: 1px solid rgb(220,220,200);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    width: 93%;
+}
+.editor_wrapper input:focus{
+    outline: none;
+    border: 1px solid #1f93ff;
+    
+}
+.editor_wrapper button{
+    cursor:pointer;
+    width: 93%;
+    height: 40px;
+    border: none;
+    background-color: #1f93ff;
+    color:white;
+    border-radius: 10px;
+    margin: 10px;
+}
+.editor_wrapper button:active{
+    background-color: #aff3ff;
+}
+p{
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    margin-left: 4px;
+}

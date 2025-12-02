@@ -1,0 +1,27 @@
+.FoodList{
+    margin : 0;
+    padding:0;
+    display: inline-block;
+    margin-left: 7.61px;
+    width: 49%;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 100, 0.2) 10px 10px 10px 5px;
+    transition: transform 0.2s ease;
+
+}
+.food_wrapper{
+    max-height: 100%; 
+    overflow-y: auto;
+}
+.FoodList:hover {
+    transform: scale(1.03);
+}
+
+.FoodList h4{
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.food_wrapper .food_list{
+    height: 280px;
+}

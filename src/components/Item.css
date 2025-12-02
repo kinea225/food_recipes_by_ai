@@ -1,0 +1,79 @@
+.Item{
+    border:  solid #ececec 1px;
+    border-radius:  5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 10px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(100,100,100,0.07);
+    position: relative;
+    font-size: 15px;
+    transition: transform 0.2s ease;
+    cursor: grab;
+}
+.Item:hover {
+    transform: scale(1.03);
+}
+.itme_name {
+    font-size: 15px;
+    font-weight: 500;
+    color: #222;
+}
+.remaining {
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    color: #1fbb4c;
+    margin-left: 6px;
+    font-weight: 500;
+}
+.use_by_date {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    color: #6c757d;
+    marign: 0;
+}
+.Item button {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #b0b0b0;
+    font-size: 20px;
+    transition: color 0.2s;
+}
+.Item button:hover {
+    color: red;
+}
+.Item_header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-right: 40px; /* 버튼 영역만큼 오른쪽 여백 추가 */
+}
+
+.remaining.remaining_safe{
+    color:#1fbb4c
+}
+.remaining.remaining_almost{
+    color:#ff9500
+}
+.remaining.remaining_disposal{
+    color:#D92334
+}
+.Item.Item_dead{
+    background-color: lightgray;
+}
+.Item.Item_dead .itme_name,
+.Item.Item_dead .remaining,
+.Item.Item_dead .use_by_date,
+.Item.Item_dead button{
+    color: #ff5252;
+    font-weight: bold;
+}
