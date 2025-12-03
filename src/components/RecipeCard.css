@@ -1,0 +1,90 @@
+.RecipeCard{
+    margin:20px ;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 15px;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); /* 부드러운 가속도 */
+    transition-duration: 150ms;
+}
+.RecipeCard:hover{
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.RecipeCard.RecipeCard_0{
+    border-color: #fed7aa;
+    background-color: #fff7ed;
+}
+.RecipeCard.RecipeCard_1{
+    background-color: #f0fdf4;
+    border-color: #bbf7d0;
+}
+.RecipeCard.RecipeCard_2{
+    border-color: #e9d5ff;
+    background-color: #faf5ff;
+    
+}
+
+.recipe_title h3{
+    color: #111827;
+    font-weight: bold;
+}
+
+.food_ingredient{
+    display: flex;
+    flex-direction: column; /* 세로 정렬 */
+    gap: 1px;
+}
+
+.ingredient_title{
+  display: flex;
+  align-items: center;
+  gap: 1px; 
+}
+.ingredient_title h4{
+    font-size: 15px; 
+    line-height: 3px;
+    font-weight: bold;
+    color: #374151;
+    margin: 5px;
+}
+.ingredient_list{
+    margin-left: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.ingredient_list .ingredient_item{
+    font-size: 14px; 
+    line-height: 14px;
+    color: #4b5563; 
+    list-style-type: disc;
+    padding-left: 5px;
+}
+
+.instructions_title{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    margin-bottom: 0.5rem;
+}
+.instructions_title h4{
+    font-size: 14px;
+    line-height: 5px;
+    font-weight: 700;
+    color: #374151;
+    margin: 5px;
+}
+.instructions_list{
+    margin-left: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.instructions_list .instructions_item{
+  font-size: 0.875rem;
+  line-height: 1.0rem;
+  color: #4b5563;
+  list-style-type: decimal;
+  padding-left: 7px; 
+}

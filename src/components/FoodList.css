@@ -10,6 +10,25 @@
     transition: transform 0.2s ease;
 
 }
+.list_title{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.list_title button {
+    cursor:pointer;
+    width: 50%;
+    height: 40px;
+    border: none;
+    background-color: red;
+    color:white;
+    border-radius: 10px;
+    margin: 10px;
+}
+.list_title button:active{
+    background-color: brown;
+    color: #ffecec;
+}
 .food_wrapper{
     max-height: 100%; 
     overflow-y: auto;

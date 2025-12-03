@@ -1,11 +1,9 @@
 import { useEffect, useMemo, useReducer, useRef, useState } from 'react'
-
 import './App.css'
-import Editor from './components/Editor'
-import FoodList from './components/FoodList'
 import AiRecipe from './components/AiRecipe'
 import Viewer from './components/Viewer'
 import { FoodstateContext, FoodDispatchContext } from './contexts/FoodContext'
+import { getDateDif } from '../utill'
 
 
 const foodList = [{
@@ -32,6 +30,9 @@ function reducer(state, action){
     }
     case "DELETE":{
       return state.filter((it)=> String(it.id) !== String(action.targetId));
+    }
+    case "DELETE_DATE":{
+      return state.filter((it) => getDateDif(it.date) >=0 );
     }
     default: return state;
   }
@@ -65,8 +66,13 @@ function App() {
       targetId
     })
   }
+  const onDeleteDate = () =>{
+    dispatch({
+      type:"DELETE_DATE",
+    })
+  }
   const memoizedDispatch = useMemo(()=>{
-    return {onCreate, onDelete};
+    return {onCreate, onDelete, onDeleteDate};
   },[]);
   return (
     <div className='App'>
