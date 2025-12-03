@@ -1,16 +1,16 @@
-# React + Vite
+# 구현 내용
+(React/vite) 상품 이름, 유통기한 입력해서 Reducer에 저장.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+(Logic) 유통기한 3일 남으면 앱 켰을 때 빨간색으로 표시.
 
-Currently, two official plugins are available:
+(Gemini 활용 포인트): "계란, 양파, 파" 입력하고 "이걸로 만들 수 있는 요리 추천해줘" 버튼 누르면 Gemini가 레시피 3개 알려주기.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 스마트 냉장고 계획
+step 1. 냉장고에 들어가는 식품 이름과 유통기한을 입력한다. 
+	1-1. 입력받은 식품을 저장하는 객체 생성
+step 2. 유통기한을 기준으로 약 3일정도 남을 시 빨간색으로 바탕을 칠한다. ( 남은 유통기한은 (유통기한 - 현재 날짜) 기준으로 잡는다.
+	2-1 유통기한이 지난 음식은 따로 분리하여 제거한다. 
+	2-2 제거된(제거해야하는) 식품은 따로 분리하여 보여준다.
+step 3. list에서 보유중인 식품을 기준으로 Gemini에게 물어본다.
+	3-1 식품이 없을 경우 보유하지 않은 식품입니다. 라는 문고를 띄워준다.
+	3-2 AI가 조사한 음식 레시피 3개 정도를 출력해준다.
