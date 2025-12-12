@@ -61,14 +61,13 @@ const AiRecipe = () =>{
         return;
       }
       // Gemini API 호출
-      //const API_KEY = 'YOUR_GEMINI_API_KEY_HERE'; // 실제 API 키로 교체하세요
       const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${API_KEY}`,
+        "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent",
         {
           method: 'POST',
           headers: {
               "Content-Type": "application/json",
-              "x-goog-api-key": API_KEY // 여기에 키를 넣으면 콘솔 URL에 안 뜸
+              "x-goog-api-key": API_KEY // 헤더로만 키 전달, URL 노출 방지
           },
           body: JSON.stringify({
             contents: [
