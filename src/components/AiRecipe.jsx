@@ -67,7 +67,8 @@ const AiRecipe = () =>{
         {
           method: 'POST',
           headers: {
-            'Content-Type': 'application/json',
+              "Content-Type": "application/json",
+              "x-goog-api-key": API_KEY // 여기에 키를 넣으면 콘솔 URL에 안 뜸
           },
           body: JSON.stringify({
             contents: [
