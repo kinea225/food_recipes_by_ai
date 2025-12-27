@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { getDateDif, getFormattedDate } from "../../utill";
-import "./item.css";
+import "./Item.css";
 import { FoodDispatchContext } from "../contexts/FoodContext";
 
 const Item = ({id, name, date}) =>{
